@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/voltarPage"
+        android:icon="@drawable/left"
+        android:title="@string/voltar"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/calcularImc"
+        android:title="@string/calculoImc" />
+    <item
+        android:id="@+id/teste1"
+        android:title="Teste 01" />
+</menu>

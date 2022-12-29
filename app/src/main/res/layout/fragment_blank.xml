@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".BlankFragment">
+
+
+    <ScrollView
+        android:id="@+id/fragmentImc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/apptextTop"
+                android:layout_width="334dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:elegantTextHeight="true"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/app_textTop"
+                android:textAlignment="center"
+                android:textColor="#535353"
+                android:textDirection="firstStrongRtl"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textPeso2"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/app_altura"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputTextPeso" />
+
+            <EditText
+                android:id="@+id/inputTextPeso"
+                android:layout_width="145dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:elegantTextHeight="true"
+                android:ems="10"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPeso"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/textPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/app_peso"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/apptextTop" />
+
+            <EditText
+                android:id="@+id/inputTextAltura"
+                android:layout_width="145dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:elegantTextHeight="true"
+                android:ems="10"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPeso2"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/resultImc"
+                android:layout_width="232dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="33dp"
+                android:width="50dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#D10000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/descriptionResult"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonOk" />
+
+
+            <TextView
+                android:id="@+id/descriptionResult"
+                android:layout_width="376dp"
+                android:layout_height="233dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:width="50dp"
+                android:elegantTextHeight="false"
+                android:foregroundGravity="center"
+                android:freezesText="false"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="24sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resultImc" />
+
+            <Button
+                android:id="@+id/buttonOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:onClick="resultado"
+                android:text="Ok"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputTextAltura" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
+
+

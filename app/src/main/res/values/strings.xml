@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LeTech</string>
+    <string name="app_textTop">Calculo Imc</string>
+    <string name="app_peso">Digite seu peso:</string>
+    <string name="app_altura">Digite sua altura:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imc">IMC</string>
+    <string name="calculoImc">Calculo Imc</string>
+    <string name="voltar">Voltar</string>
+    <string name="bemVindo">Bem Vindo</string>
+
+</resources>
